@@ -1,0 +1,12 @@
+{
+  "name": "problongerthansidelen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/main.js",
+  "scripts": {
+    "test": "tsc && cd build && node main.js && cd ..",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC"
+}
