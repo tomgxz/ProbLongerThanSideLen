@@ -1,8 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculation = void 0;
-undefined;
-{
+function calculation() {
     let sideLength = 5;
     let topArray = new Array(sideLength).fill(0);
     let leftArray = new Array(sideLength).fill(0);
@@ -49,5 +48,9 @@ undefined;
     if (length > sideLength) {
         return true;
     }
+    else {
+        return false;
+    }
     return undefined;
 }
+exports.calculation = calculation;

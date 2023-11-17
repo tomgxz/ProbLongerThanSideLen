@@ -2,7 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const calculation_1 = require("./calculation");
 let results = [];
-for (let i = 0; i < 1000; i++) {
-    results.push((0, calculation_1.calculation)());
+let trueVales = 0;
+for (let i = 0; i < 10000; i++) {
+    if (typeof (calculation_1.calculation) != undefined) {
+        let answer = (0, calculation_1.calculation)();
+        results.push(answer);
+        if (answer == true) {
+            trueVales += 1;
+        }
+    }
 }
-console.log(results);
+let probability = trueVales / results.length;
+console.log(`Probability to 3dp: \n ${probability.toFixed(3)}`);
