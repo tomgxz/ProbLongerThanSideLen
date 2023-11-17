@@ -1,8 +1,22 @@
 import { calculation } from "./calculation";
-let results = [];
+let results:Array<boolean|undefined> = [];
 
-for (let i = 0; i < 1000; i++) {
-    results.push(calculation())
+let trueVales: number = 0;
+
+for (let i = 0; i < 10000; i++) {
+    if (typeof(calculation) != undefined) {
+
+        let answer = calculation()
+        results.push(answer)
+
+        if (answer == true){
+            trueVales += 1;
+        }
+    }
 }
 
-console.log(results)
+
+
+let probability: number = trueVales / results.length
+
+console.log(`Probability to 3dp: \n ${probability.toFixed(3)}`)
