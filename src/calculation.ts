@@ -1,6 +1,6 @@
 function calculation(): boolean | undefined {
 
-    let sideLength: number = 5;
+    let sideLength: number = 1000;
 
     // -------------
     // Create square

@@ -3,7 +3,7 @@ let results:Array<boolean|undefined> = [];
 
 let trueVales: number = 0;
 
-for (let i = 0; i < 10000; i++) {
+for (let i = 0; i < 100000; i++) {
     if (typeof(calculation) != undefined) {
 
         let answer = calculation()

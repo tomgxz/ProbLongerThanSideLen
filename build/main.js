@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const calculation_1 = require("./calculation");
 let results = [];
 let trueVales = 0;
-for (let i = 0; i < 10000; i++) {
+for (let i = 0; i < 100000; i++) {
     if (typeof (calculation_1.calculation) != undefined) {
         let answer = (0, calculation_1.calculation)();
         results.push(answer);

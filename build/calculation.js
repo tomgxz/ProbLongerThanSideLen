@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculation = void 0;
 function calculation() {
-    let sideLength = 5;
+    let sideLength = 1000;
     let topArray = new Array(sideLength).fill(0);
     let leftArray = new Array(sideLength).fill(0);
     let bottomArray = new Array(sideLength).fill(0);
@@ -18,7 +18,6 @@ function calculation() {
     let side1 = -1;
     let side2 = -1;
     for (let i = 0; i < square.length; i++) {
-        console.log(square[i]);
         let countOnSide = 0;
         for (let j = 0; j < square[i].length; j++) {
             if (square[i][j] == 1) {
