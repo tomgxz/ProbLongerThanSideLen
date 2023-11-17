@@ -1,4 +1,4 @@
-function calculation(): boolean, undefined {
+function calculation(): boolean | undefined {
 
     let sideLength: number = 5;
 
@@ -35,8 +35,6 @@ function calculation(): boolean, undefined {
     let side2 = -1
 
     for (let i = 0; i < square.length; i++) {
-
-        console.log(square[i])
 
         let countOnSide = 0
 
@@ -89,9 +87,12 @@ function calculation(): boolean, undefined {
 
     if (length > sideLength) {
         return true
+    } else {
+        return false
     }
 
     return undefined
+
 }
 
 export {calculation}
